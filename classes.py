@@ -41,9 +41,9 @@ class Recipe():
         self.nutritionalinfo=nutritionalinfo
 
     
-    timeForPreparation():
+    timeForPreparation(self):
 
-    if(this.preparationtime>=3):
+    if(self.preparationtime>=3):
             print("this cuisine takes a long time to prepare")
         
     else:
@@ -82,35 +82,59 @@ fish.totalValue()
 fruits = Product("pears",20,8)
 fruits.totalValue()
 
-class Student
-    constructor(name,age,grades){
-        this.name=name;
-        this.age=age;
-        this.grades=grades;
-    }
-    averageGrade(){
-        let total=0;
-        for(g in this.grades){
+class Student():
+    def__init__(self,name,age,grades)
+        self.name=name
+        self.age=age
+        self.grades=grades
+    
+    average_grade(self):
+        total=0
+        for ( g in self.grades)
             total+=g;
-            console.log(total);
-        }
-        let average=total/(this.grades.length)
-        console.log(average);
+            print(total);
         
-    }
-    displayInfo(){
-       console.log(`This student's name is ${this.name} and they are ${this.age} years old and they have an average grade of ${this.averageGrade()}`);
-    }
-    passMark(){
-        if(this.averageGrade()>=60){
-            console.log("The student has passed");
-        }
-        else{
-            "The student has failed"
-        }
-    }
-}
-let Joan=new Student("Njiru",23,[80,85,74,90])
+        averagetotal/(this.grades.length)
+        print(average);
+        
+    
+    display_total(self):
+       print("This student's name is f{self.name} and they are f{self.age} years old and they have an average grade of ${this.averageGrade()}");
+    
+    passMark(self):
+        if(this.averageGrade()>=60):
+            print("The student has passed");
+        
+        else:
+            print("The student has failed")
+        
+    
+
+Joan=Student("Njiru",23,[80,85,74,90])
 Joan.averageGrade()
 Joan.displayInfo()
 Joan.passMark()
+
+#8
+class LibraryCatalog():
+    def__init__(self,title,author,number)
+        self.title=title;
+        self.author=author;
+        self.number=number;
+    
+    searchForBooks(self,title):
+        if(self.title=title):
+            print("This books is available");
+        
+        else:
+            print("This book is not available");
+        
+
+    
+    keepTrack()
+        print("The number of copies remaining for ${self.title} are ${self.number}");
+
+    
+    addNewBooks()
+
+    
